@@ -1,16 +1,15 @@
-beanstalkc
+beanstalkc3
 ==========
 
-beanstalkc is a simple beanstalkd client library for Python. [beanstalkd][] is
+beanstalkc3 is a simple beanstalkd client library for Python 3. [beanstalkd][] is
 a fast, distributed, in-memory workqueue service.
 
-beanstalkc depends on [PyYAML][], but there are ways to avoid this dependency.
+beanstalkc3 depends on [PyYAML][], but there are ways to avoid this dependency.
 See Appendix A of the tutorial for details.
 
-beanstalkc is pure Python, and is compatible with [eventlet][] and [gevent][].
+beanstalkc3 is pure Python, and is compatible with [eventlet][] and [gevent][].
 
-beanstalkc is currently only supported on Python 2 and automatically tested
-against Python 2.6 and 2.7. Python 3 is not (yet) supported.
+beanstalkc3 is supported on Python 3.
 
 [beanstalkd]: http://kr.github.com/beanstalkd/
 [eventlet]: http://eventlet.net/
@@ -18,13 +17,14 @@ against Python 2.6 and 2.7. Python 3 is not (yet) supported.
 [PyYAML]: http://pyyaml.org/
 
 
+
 Usage
 -----
 
-Here is a short example, to illustrate the flavor of beanstalkc:
+Here is a short example, to illustrate the flavor of beanstalkc3:
 
-    >>> import beanstalkc
-    >>> beanstalk = beanstalkc.Connection(host='localhost', port=14711)
+    >>> import beanstalkc3
+    >>> beanstalk = beanstalkc3.Connection(host='localhost', port=14711)
     >>> beanstalk.put('hey!')
     1
     >>> job = beanstalk.reserve()
